@@ -1,6 +1,7 @@
 #ifndef MPAGSCIPHER_VIGENERECIPHER_HPP
 #define MPAGSCIPHER_VIGENERECIPHER_HPP
 
+#include "Cipher.hpp"
 #include "CaesarCipher.hpp"
 #include "CipherMode.hpp"
 
@@ -16,7 +17,7 @@
  * \class VigenereCipher
  * \brief Encrypt or decrypt text using the Vigenere cipher with the given key
  */
-class VigenereCipher {
+class VigenereCipher: public Cipher {
   public:
     /**
      * \brief Create a new VigenereCipher with the given key
